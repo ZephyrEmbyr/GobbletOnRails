@@ -1,0 +1,2 @@
+module GobbletHelper
+end

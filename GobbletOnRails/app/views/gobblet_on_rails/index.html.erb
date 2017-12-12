@@ -1,0 +1,10 @@
+<h1>Gobblet On Rails!</h1>
+<p> <%= image_tag "gobblet_intro2.jpg" %> </p>
+<a href="http://localhost:3000/rules.pdf">Rules</a>
+<a href="http://localhost:3000/players">Standings</a>
+<p>Find me in app/views/gobblet_on_rails/index.html.erb</p>
+<%= form_tag do%>
+	<p>White Player: <%= text_field_tag(:white_name) %> </p>
+	<p>Black Player: <%= text_field_tag(:black_name) %> </p>
+	<p> <%= submit_tag "Submit Names"%> </p>
+<% end %>

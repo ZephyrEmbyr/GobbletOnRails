@@ -1,0 +1,2 @@
+class GobbletController < ApplicationController
+end
