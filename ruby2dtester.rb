@@ -21,6 +21,25 @@ board.color = [1, 0.4, 0.28, 0.82]
 # piece2 = Square.new(x: 200, y: 50, size: 100, z: 0, color: 'white')
 # piece3 = Square.new(x: 350, y: 50, size: 100, z: 0, color: 'white')
 # piece4 = Square.new(x: 500, y: 50, size: 100, z: 0, color: 'white')
+
+# @grid = [[[],[],[],[]],[[],[],[],[]],[[],[],[],[]],[[],[],[],[]]]
+# @pieceWhite = [["1w","2w","3w","4w"],["1w","2w","3w","4w"],["1w","2w","3w","4w"]]
+# @pieceBlack = [["1b","2b","3b","4b"],["1b","2b","3b","4b"],["1b","2b","3b","4b"]]
+
+grid = [[[],[],[],[]],[[],[],[],[]],[[],[],[],[]],[[],[],[],[]]]
+
+numRows = 0
+numCols = 0
+grid.each do |row|
+	grid.each do |element|
+		
+		numCols += 1
+	end
+	numRows += 1
+	numCols = 0
+end
+
+
 piece = Square.new(x: 0, y: 0, size: 0, z: 0, color: 'white')
 
 
@@ -49,7 +68,8 @@ def setBlack
 	piece.color = "black"
 end
 
-
+# def setPosX
+# 	piece.x = 
 
 
 
