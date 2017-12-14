@@ -1,5 +1,5 @@
 class Board
-	attr_accessor :turn
+	attr_accessor :turn, :pieceWhite, :pieceBlack, :grid
 	def initialize #4 by 4 grid, 3 stacks of 4 pieces each.
 		@grid = [[[],[],[],[]],[[],[],[],[]],[[],[],[],[]],[[],[],[],[]]]
 		@pieceWhite = [["1w","2w","3w","4w"],["1w","2w","3w","4w"],["1w","2w","3w","4w"]]
