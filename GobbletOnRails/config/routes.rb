@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'game_page/play'
+
   root "gobblet_on_rails#index"
   get "/gobblet_on_rails" => "gobblet_on_rails#index"
   get "/" => "gobblet_on_rails#index"
