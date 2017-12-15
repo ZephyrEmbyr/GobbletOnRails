@@ -384,13 +384,15 @@ require 'ruby2d'
 
 		t = Time.now
 
-		update do
-		  # Close the window after 5 seconds
-		  if Time.now - t > 0.1 then close end
-		end
-		clear
-		show
-		close
+		# update do
+		#   # Close the window after 5 seconds
+		#   if Time.now - t > 0.1 then close end
+		# end
+		# clear
+		# show
+		# close
+
+		system 'build '
 	end
 
 # k = Board.new
