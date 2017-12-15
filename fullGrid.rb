@@ -391,8 +391,6 @@ def display2(grid)
 	  if Time.now - t > 0.1 then close end
 	end
 	show
-	clear
-	close
 end
 
 k = Board.new
