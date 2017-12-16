@@ -1,4 +1,7 @@
-set title: "Testing Ruby 2D"
+require 'ruby2d'
+require 'yaml'
+
+set title: "LALALA"
 
 size = 18 				# must be even integer
 
@@ -28,14 +31,19 @@ border3 = Rectangle.new(x: 0, y: boardSize - (buffer/4), width: boardSize, heigh
 border4 = Rectangle.new(x: 0, y: 0, width: (buffer/4), height: boardSize, z: 0, color: "black")
 
 # example grid
-puts ARGV[0]
-if ARGV[0]
-	puts "true"
-	grid = ARGV[0].to_a
+# if ARGV[0]
+# 	puts "true"
+# 	grid = ARGV[0].to_a
 # else
-# 	grid = [[["1b", "3w"],["2b"],["3b"],["4b"]],[[],["1b"],["3w"],[]],[["1w", "2b", "3w", "4w"],["4b"],[],[]],[["4w"],[],[],[]]]
-end
-
+str = ARGV[0].dup
+### transform your string in a valid YAML-String
+str.gsub!(/(\,)(\S)/, "\\1 \\2 \\3")
+grid = YAML::load(str)
+# => [["this", "is"], ["a", "nested"], ["array"]]
+puts grid
+grid = [[["1b", "3w"], ["2b"], ["3b"], ["4b"]], [[],["1b"], ["3w"], []], [["1w", "2b", "3w", "4w"], ["4b"], [], []], [["4w"], [], [], []]]
+# end
+puts "hi"
 # initial variable settings
 numRows = 0
 numCols = 0

@@ -24810,9 +24810,9 @@ function render() {
   }
   var TMP_1, TMP_2, TMP_3, self = Opal.top, $nesting = [], nil = Opal.nil, $breaker = Opal.breaker, $slice = Opal.slice, $hash2 = Opal.hash2, $send = Opal.send, $range = Opal.range, $truthy = Opal.truthy, size = nil, buffer = nil, boardSize = nil, board = nil, boardLines = nil, border1 = nil, border2 = nil, border3 = nil, border4 = nil, grid = nil, numRows = nil, numCols = nil, currIndex = nil, pieces = nil, piece = nil;
 
-  Opal.add_stubs(['$set', '$*', '$+', '$new', '$each', '$push', '$/', '$-', '$puts', '$[]', '$empty?', '$last', '$==', '$color=', '$to_i', '$size=', '$x=', '$y=', '$show']);
+  Opal.add_stubs(['$set', '$*', '$+', '$new', '$each', '$push', '$/', '$-', '$puts', '$empty?', '$last', '$==', '$[]', '$color=', '$to_i', '$size=', '$x=', '$y=', '$show']);
   
-  self.$set($hash2(["title"], {"title": "Testing Ruby 2D"}));
+  self.$set($hash2(["title"], {"title": "LALALA"}));
   size = 18;
   buffer = $rb_times(size, 1.8);
   boardSize = $rb_plus($rb_times(5, buffer), $rb_times($rb_times(4, 4), size));
@@ -24827,9 +24827,8 @@ if (i == null) i = nil;
   border2 = Opal.const_get_relative($nesting, 'Rectangle').$new($hash2(["x", "y", "width", "height", "z", "color"], {"x": $rb_minus(boardSize, $rb_divide(buffer, 4)), "y": 0, "width": $rb_divide(buffer, 4), "height": boardSize, "z": 0, "color": "black"}));
   border3 = Opal.const_get_relative($nesting, 'Rectangle').$new($hash2(["x", "y", "width", "height", "z", "color"], {"x": 0, "y": $rb_minus(boardSize, $rb_divide(buffer, 4)), "width": boardSize, "height": $rb_divide(buffer, 4), "z": 0, "color": "black"}));
   border4 = Opal.const_get_relative($nesting, 'Rectangle').$new($hash2(["x", "y", "width", "height", "z", "color"], {"x": 0, "y": 0, "width": $rb_divide(buffer, 4), "height": boardSize, "z": 0, "color": "black"}));
-  self.$puts(Opal.const_get_relative($nesting, 'ARGV')['$[]'](0));
-  if ($truthy(Opal.const_get_relative($nesting, 'ARGV')['$[]'](0))) {
-    grid = Opal.const_get_relative($nesting, 'ARGV')['$[]'](0)};
+  grid = [[["1b", "3w"], ["2b"], ["3b"], ["4b"]], [[], ["1b"], ["3w"], []], [["1w", "2b", "3w", "4w"], ["4b"], [], []], [["4w"], [], [], []]];
+  self.$puts("hi");
   numRows = 0;
   numCols = 0;
   currIndex = 0;

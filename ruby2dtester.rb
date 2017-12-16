@@ -1,7 +1,7 @@
 require 'ruby2d'
 
 def display(grid)
-	set title: "Testing Ruby 2D"
+	set title: "!!!Testing Ruby 2D!!!"
 
 	size = 18 				# must be even integer
 
@@ -82,5 +82,5 @@ def display(grid)
 	show
 end
 
-#display([[["1b", "3w"],["2b"],["3b"],["4b"]],[[],["1b"],["3w"],[]],[["1w", "2b", "3w", "4w"],["4b"],[],[]],[["4w"],[],[],[]]])
+display([[["1b", "3w"],[],["3b"],["4b"]],[[],["1b"],["3w"],[]],[["1w", "2b", "3w", "4w"],["4b"],[],[]],[["4w"],[],[],[]]])
 
