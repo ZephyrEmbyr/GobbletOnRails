@@ -53,9 +53,13 @@
 			}
 			board << "\n"
 		}
-		return [white,black,board]
+
+		turn = "It is "
+		turn << @turn << "'s turn:"
+		return [white,black,board,turn]
 	end
 
+	def 
 	def move(input)
 		success = false
 		arr = input.split("x")
