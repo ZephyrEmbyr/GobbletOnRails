@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  whitePieces: 
+  blackPieces: 
+  board: 
+  turn: MyString
+
+two:
+  whitePieces: 
+  blackPieces: 
+  board: 
+  turn: MyString

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :game_states
   root "gobblet_on_rails#index"
   get 'game_page/play' => "game_page#play"
   get "/gobblet_on_rails" => "gobblet_on_rails#index"
