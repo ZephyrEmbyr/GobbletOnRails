@@ -12,6 +12,40 @@
 		@turn = "White"
 	end
 
+	def initialize(white, black, grid, turn) #4 by 4 grid, 3 stacks of 4 pieces each.
+		@grid = grid
+		@pieceWhite = white
+		@pieceBlack = black
+		@turn = turn
+	end
+
+	def stringerize
+		white = ""
+		@pieceWhite.each { |a| if a.length > 0 then white << a.to_s[1..-2] << "|" else white << "None" << "|"end }
+		white = white[0..-2]
+
+		black = "Black pieces: \n"
+		@pieceBlack.each { |a| if a.length > 0 then black << a.to_s[1..-2] << "|" else black << "None" << "|"end }
+		black = black[0..-2]
+
+		board = ""
+		@grid.each{ |a|
+			a.each{ |b|
+					if b.length == 0
+						board << "None|"
+					else
+						board << b.to_s[1..-2] << "|"
+					end
+					board = board[0..-2]
+			}
+			board << "*"
+		}
+		board = board[0..-2]
+
+		turn = @turn
+		return [white,black,board,turn]
+	end
+
 	def display
 		puts "White pieces:"
 		@pieceWhite.each { |a| if a.length > 0 then print a.last[0] , "\t" else print "None" , "\t"end }
@@ -59,7 +93,6 @@
 		return [white,black,board,turn]
 	end
 
-	def 
 	def move(input)
 		success = false
 		arr = input.split("x")
