@@ -1,4 +1,14 @@
-<h1>GamePage#play</h1>
-<p>Find me in app/views/game_page/play.html.erb</p>
+<h1>BOGGLE on Rails!</h1>
 
-<!--%= show %-->
+
+<pre>
+  <%= @stuff[0] %>
+  <%= @stuff[1] %>
+  <%= @stuff[2] %>
+</pre>
+
+
+<%= form_tag do%>
+	<p>Your move: <%= text_field_tag(:enterMove) %> </p>
+	<p> <%= submit_tag "Enter Move"%> </p>
+<% end %>
