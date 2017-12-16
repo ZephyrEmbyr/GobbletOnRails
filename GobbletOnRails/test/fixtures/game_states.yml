@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  whitePieces: 
-  blackPieces: 
-  board: 
+  whitePieces: MyString
+  blackPieces: MyString
+  board: MyString
   turn: MyString
 
 two:
-  whitePieces: 
-  blackPieces: 
-  board: 
+  whitePieces: MyString
+  blackPieces: MyString
+  board: MyString
   turn: MyString
