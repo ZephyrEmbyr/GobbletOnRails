@@ -21,6 +21,18 @@ class GamePageController < ApplicationController
 		@g.display
 		render :play
 		@g.display
+
+		@gridData = @g.stringArrays
+		map = {"whitePieces" = @gridData[0], "blackPieces" = @gridData[1], "game_state" = @gridData[2], "turn" = @gridData[3]} 
+		newRow = GameState.new(map)
+		respond_to do |format|
+			if newRow.save
+				puts "Success!"
+				format.html {redirect_to auction_app_url}
+			else
+				format.html {redirect_to "/"}	# Can create an error page
+			end
+		end
 	end
 
 	def play
