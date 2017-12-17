@@ -12,11 +12,9 @@
 		@turn = "White"
 	end
 
-	def initialize(white, black, grid, turn) #4 by 4 grid, 3 stacks of 4 pieces each.
-		@grid = grid
-		@pieceWhite = white
-		@pieceBlack = black
-		@turn = turn
+	def initialize(white, black, board, turn) #4 by 4 grid, 3 stacks of 4 pieces each.
+		whiteSplit1 = white.split("|")
+		whiteSplit1.each{|a| }
 	end
 
 	def stringerize
